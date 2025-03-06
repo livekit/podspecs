@@ -1,9 +1,11 @@
-name: "Repo Lint"
+name: Repo Lint
 on:
   push:
     branches: [main]
   pull_request:
     branches: [main]
+  schedule:
+    - cron: 0 13 * * 1
 jobs:
   lint:
     name: Lint
