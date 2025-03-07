@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name = 'Logging'
-    s.version = '1.6.2'
+    s.version = '1.5.4'
     s.license = { :type => 'Apache 2.0', :file => 'LICENSE.txt' }
     s.summary = 'A Logging API for Swift.'
     s.homepage = 'https://github.com/apple/swift-log'
