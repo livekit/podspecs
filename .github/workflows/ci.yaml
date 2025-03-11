@@ -30,6 +30,6 @@ jobs:
         run: |
           find Specs -name "*.podspec" -type f | while read -r podspec; do
             echo "::group::Linting $podspec"
-            pod spec lint "$podspec" --allow-warnings --verbose --sources=self
+            pod spec lint "$podspec" --allow-warnings --verbose --sources=self,https://cdn.cocoapods.org/
             echo "::endgroup::"
           done
